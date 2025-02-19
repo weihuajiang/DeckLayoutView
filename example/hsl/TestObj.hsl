@@ -1,0 +1,10 @@
+#include "HSLStrLib.hsl"
+method main()
+{
+   object obj;
+   obj.CreateObject("Test.DeckLayoutView");
+   obj.ConvertDeckToImage("C:\\Program Files (x86)\\HAMILTON\\Methods\\Test\\Method1.lay", StrConcat2(GetLogFilesPath(), "\\test2.png"));
+   obj.ShowDeck("C:\\Program Files (x86)\\HAMILTON\\Methods\\Test\\Method1.lay");
+   obj.ReleaseObject();
+}
+// $$author=weihu$$valid=0$$time=2025-02-19 10:37$$checksum=d5d3dadb$$length=082$$

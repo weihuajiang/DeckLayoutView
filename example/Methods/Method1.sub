@@ -1,0 +1,13 @@
+// {{{ 2 "SubmethodForwardDeclaration" ""
+function OnAbort(  ) void ;
+// }} ""
+// {{{ 5 "OnAbort" "Begin"
+function OnAbort(  ) void {
+// }} ""
+// {{ 5 "OnAbort" "InitLocals"
+// }} ""
+// {{{ 5 "OnAbort" "End"
+}
+// }} ""
+/* {{ 2 "SubmethodInsertLine" "" */ // }} ""
+// $$author=weihu$$valid=0$$time=2025-02-19 10:35$$checksum=d2223ec4$$length=084$$

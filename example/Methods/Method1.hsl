@@ -1,0 +1,127 @@
+#include "Method1.res"
+global device ML_STAR ("Method1.lay", "ML_STAR", hslTrue);
+ namespace _Method { #include "HSLStrLib.hsl" } 
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+ namespace _Method { #include "HSLMETEDLib.hs_" } 
+ namespace _Method { #include "HSLMECCLib.hs_" } 
+ namespace _Method { #include "HSLPTLLib.hsl" } 
+// }} ""
+// {{{ 2 "LocalSubmethodInclude" ""
+ namespace _Method {  #include __filename__ ".sub"  } 
+// }} ""
+/* {{ 2 "ProcessInsertLine" "" */ // }} ""
+// {{{ 5 "main" "Begin"
+namespace _Method { method main(  ) void {
+// }} ""
+// {{ 5 "main" "InitLocals"
+// }} ""
+// {{ 2 "AutoInitBlock" ""
+PTL::SetWashingStateDefault("RinseTime1", 5);
+PTL::SetWashingStateDefault("SoakTime1", 5);
+PTL::SetWashingStateDefault("FlowRate1", 11);
+PTL::SetWashingStateDefault("RinseTime2", 0);
+PTL::SetWashingStateDefault("SoakTime2", 0);
+PTL::SetWashingStateDefault("FlowRate2", 11);
+PTL::SetWashingStateDefault("DrainingTime", 10);
+PTL::SetWashingStateDefault("StartWashLiquid", 0);
+PTL::SetLoadingStateDefault("RecoveryOptionContinue", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionExclude", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionDefault", 0);
+PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
+::RegisterAbortHandler( "OnAbort");
+// }} ""
+// {{ 1 1 0 "047d2190_9cd0_41a0_9f213fe70ab08256" "ML_STAR:{1C0C0CB0-7C87-11D3-AD83-0004ACB1DCB2}"
+{
+	variable arrRetValues[];
+	arrRetValues = ML_STAR._1C0C0CB0_7C87_11D3_AD83_0004ACB1DCB2("047d2190_9cd0_41a0_9f213fe70ab08256"); // Initialize
+}
+// }} ""
+// {{ 2 1 0 "aab49181_5db1_487e_a02e118f02c93c49" "ML_STAR:{54114402-7FA2-11D3-AD85-0004ACB1DCB2}"
+{
+	variable arrRetValues[];
+	arrRetValues = ML_STAR._54114402_7FA2_11D3_AD85_0004ACB1DCB2("aab49181_5db1_487e_a02e118f02c93c49"); // LoadCarrier
+}
+// }} ""
+// {{ 3 1 0 "0210382f_0034_4fa0_8b0a715b6de952bc" "ML_STAR:{54114402-7FA2-11D3-AD85-0004ACB1DCB2}"
+{
+	variable arrRetValues[];
+	arrRetValues = ML_STAR._54114402_7FA2_11D3_AD85_0004ACB1DCB2("0210382f_0034_4fa0_8b0a715b6de952bc"); // LoadCarrier
+}
+// }} ""
+// {{ 4 1 0 "7f769d9d_7263_4607_a2e0c3fe28b27b60" "ML_STAR:{54114402-7FA2-11D3-AD85-0004ACB1DCB2}"
+{
+	variable arrRetValues[];
+	arrRetValues = ML_STAR._54114402_7FA2_11D3_AD85_0004ACB1DCB2("7f769d9d_7263_4607_a2e0c3fe28b27b60"); // LoadCarrier
+}
+// }} ""
+// {{ 5 1 0 "59d7f54f_8efe_4d7a_a14740e3f7bcfb89" "{B558D25C-EB8A-4a43-8878-125E1847965C}"
+PTL::ResetPipettingStateAndSequences("");
+PTL::SetPipettingState("UserResponseTime", hslInfinite);
+PTL::SetPipettingState("ErrorHandling", 3);
+PTL::SetPipettingState("TipCountingEnabled", hslFalse);
+PTL::SetPipettingState("TipCountingIdentifier", "");
+PTL::SetPipettingState("CopyPatternEnabled", hslFalse);
+PTL::SetPipettingState("ExcludeErrorPositionsEnabled", hslFalse);
+PTL::SetPipettingState("CalibrateCarrierChannel", -1);
+PTL::SetPipettingState("InitializeChannelVariable", "");
+PTL::SetPipettingState("InitializeEnabled", hslTrue);
+PTL::SetPipettingState("TipPickupChannelVariable", "");
+PTL::SetPipettingState("TipPickupEnabled", hslTrue);
+PTL::SetPipettingState("TipPickupSequenceReloadable", hslTrue);
+PTL::SetPipettingState("TipPickupSequenceReducible", hslTrue);
+PTL::SetPipettingState("TipEjectChannelVariable", "");
+PTL::SetPipettingState("AspirateMode", 0);
+PTL::SetPipettingState("AspirateCLLDSensitivity", 5);
+PTL::SetPipettingState("AspirateFluidHeight", 0);
+PTL::SetPipettingState("AspirateSubmergeDepth", 2);
+PTL::SetPipettingState("AspirateChannelVariable", "");
+PTL::SetPipettingState("AspirateMaxHeightDiff", 0);
+PTL::SetPipettingState("AspiratePLLDSensitivity", 0);
+PTL::SetPipettingState("AspirateLiquidFollowing", hslTrue);
+PTL::SetPipettingState("AspirateUserDefinedLiquidClass", "HighVolume_Water_DispenseJet_Empty");
+PTL::SetPipettingState("AspirateSequenceReloadable", hslFalse);
+PTL::SetPipettingState("AspirateSequenceReducible", hslFalse);
+PTL::SetPipettingState("AspirateSequenceCurrentInitialization", -10);
+PTL::SetPipettingState("AspirateSequenceCurrentFinalization", -7);
+PTL::SetPipettingState("AspirateSequenceCountInitialization", -10);
+PTL::SetPipettingState("AspirateSequenceCountFinalization", -8);
+PTL::SetPipettingState("AspirateSequenceCalibration", hslTrue);
+PTL::SetPipettingState("DispenseSubmergeDepth", 0);
+PTL::SetPipettingState("DispenseChannelVariable", "");
+PTL::SetPipettingState("DispenseCLLDSensitivity", 0);
+PTL::SetPipettingState("DispenseFluidHeight", 5);
+PTL::SetPipettingState("DispenseMode", 1);
+PTL::SetPipettingState("DispenseLiquidFollowing", hslTrue);
+PTL::SetPipettingState("DispenseUserDefinedLiquidClass", "HighVolume_Water_DispenseJet_Empty");
+PTL::SetPipettingState("DispenseSequenceReloadable", hslTrue);
+PTL::SetPipettingState("DispenseSequenceReducible", hslTrue);
+PTL::SetPipettingState("DispenseSequenceCurrentInitialization", -10);
+PTL::SetPipettingState("DispenseSequenceCurrentFinalization", -7);
+PTL::SetPipettingState("DispenseSequenceCountInitialization", -10);
+PTL::SetPipettingState("DispenseSequenceCountFinalization", -8);
+PTL::SetPipettingState("DispenseSequenceCalibration", hslTrue);
+PTL::SetPipettingState("DispenseRestVolumeDestination", 0);
+PTL::SetPipettingState("DispenseRestVolumeToAspirateSequenceSurface", hslFalse);
+PTL::SetPipettingState("DispenseRestVolumeFluidHeight", 0);
+if( 0 == PTL::Pipette(ML_STAR, ML_STAR.MlStar1000ulHighVolumeTip, ML_STAR.SMP_CAR_32_12x75_A00_0001, ML_STAR.Cos_96_PCR_0001, 1, 1, 100, 0, 1, hslInfinite, hslInfinite, 1, "") )
+{
+    PTL::RaiseRuntimeError(-1573650176, PTL::IDS::smartStepPipette, PTL::IDS::smartStepFailed, "HxGRUCompCmd");
+}
+// }} ""
+{
+
+   object obj;
+   obj.CreateObject("Test.DeckLayoutView");
+   obj.ConvertDeckToImage2(ML_STAR.GetDeckLayoutObject(), StrConcat2(GetLogFilesPath(),"\\test2.png"));
+   obj.ShowDeck2(ML_STAR.GetDeckLayoutObject());
+   obj.ReleaseObject();
+
+}
+// {{ 2 "AutoExitBlock" ""
+// }} ""
+// {{{ 5 "main" "End"
+} }
+// }} ""
+// $$author=weihu$$valid=0$$time=2025-02-19 10:35$$checksum=9e795df9$$length=084$$
